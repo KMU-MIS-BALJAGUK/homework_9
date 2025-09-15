@@ -1,9 +1,7 @@
-import Image from "next/image";
-
-export default function Home() {
+export default function AboutPage() {
   return (
-    <div className="flex justify-center h-screen items-center">
-      메인 페이지입니다.
-    </div>
+    <dev>
+      <h1>about</h1>
+    </dev>
   );
 }
