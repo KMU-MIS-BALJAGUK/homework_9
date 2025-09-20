@@ -1,15 +1,15 @@
 "use client" ;
 
 import { useState } from "react";
-import Header from "../components/Header";
+import Header from "./components/Header";
 
-export default function about() {
+export default function home() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div>
       <Header />
-      <h1>about</h1>
+      <h1>home</h1>
     </div>
   );
 }
