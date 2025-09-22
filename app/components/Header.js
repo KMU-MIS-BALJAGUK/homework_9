@@ -5,15 +5,15 @@ import { usePathname } from "next/navigation";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
-  const pathname = usePathname(); // 👈 현재 페이지 경로 얻기
+  const pathname = usePathname();
 
   const linkStyle = (path) =>
     pathname === path
       ? "text-purple-500"
-      : "text-gray-700 hover:text-purple-500"; // 아니면 기본 회색 + hover시 보라색
+      : "text-gray-700 hover:text-purple-500";
 
   return (
-    <header className="bg-white shadow-sm">
+    <header className="shadow-sm">
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* 로고 */}
         <div className="text-xl font-bold text-gray-900">LOGO</div>
