@@ -28,7 +28,7 @@ export default function PricingPage() {
               <button
                 onClick={() => handleButtonClick('Get started')}
                 className="py-2 px-5 rounded-md transition-colors duration-200 
-  bg-[#bf73e6] text-gray-900"
+  bg-[#C1A0FD] text-gray-900"
               >
                 Get started &rarr;
               </button>
