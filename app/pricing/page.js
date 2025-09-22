@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
-
+import { Button2 } from '../components/Button.js';
 export default function PricingPage() {
   const [activeButton, setActiveButton] = useState(null);
 
@@ -25,13 +25,9 @@ export default function PricingPage() {
               mollis justo non enim lacinia.
             </p>
             <div className="flex justify-center gap-4">
-              <button
-                onClick={() => handleButtonClick('Get started')}
-                className="py-2 px-5 rounded-md transition-colors duration-200 
-  bg-[#C1A0FD] text-gray-900"
-              >
+              <Button2 onClick={() => handleButtonClick('Get started')}>
                 Get started &rarr;
-              </button>
+              </Button2>
               <button
                 onClick={() => handleButtonClick('Learn More 2')}
                 className="py-2 px-5 rounded-md border border-gray-600 transition-colors duration-200 text-gray-900"

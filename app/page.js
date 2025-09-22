@@ -1,4 +1,6 @@
-import Image from "next/image";
+'use client';
+
+import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -7,12 +9,11 @@ export default function Home() {
     </div>
   );
 }
-"use client" ;
 
-import { useState } from "react";
-import Header from "./components/Header";
+import { useState } from 'react';
+import Header from './components/Header';
 
-export default function home() {
+export function home() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
