@@ -1,5 +1,5 @@
 'use client';
-
+import Header from '../components/Header';
 import React, { useState } from 'react';
 import { Button2 } from '../components/Button.js';
 export default function PricingPage() {
@@ -12,7 +12,7 @@ export default function PricingPage() {
 
   return (
     <main>
-      {/* 헤더 부분 */}
+      <Header />
       <section className="bg-[#ffffff] py-8 text-center">
         <div className="container mx-auto rounded-lg  pt-10 pb-10  bg-[#f7f3f9] ">
           <div className="container mx-auto px-5 max-w-7xl gap-4 mb-24">
