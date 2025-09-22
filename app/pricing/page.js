@@ -2,6 +2,8 @@
 import Header from '../components/Header';
 import React, { useState } from 'react';
 import { Button2 } from '../components/Button.js';
+import { Button3 } from '../components/Button.js';
+import { Button4 } from '../components/Button.js';
 export default function PricingPage() {
   const [activeButton, setActiveButton] = useState(null);
 
@@ -28,12 +30,9 @@ export default function PricingPage() {
               <Button2 onClick={() => handleButtonClick('Get started')}>
                 Get started &rarr;
               </Button2>
-              <button
-                onClick={() => handleButtonClick('Learn More 2')}
-                className="py-2 px-5 rounded-md border border-gray-600 transition-colors duration-200 text-gray-900"
-              >
+              <Button3 onClick={() => handleButtonClick('Learn More 2')}>
                 Learn More
-              </button>
+              </Button3>
             </div>
           </div>
           {/* 카드 섹션 */}
@@ -50,9 +49,7 @@ export default function PricingPage() {
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Integer mollis justo non enim lacinia.
                 </p>
-                <button className="bg-white py-2 px-5 rounded-md ">
-                  Learn More &rarr;
-                </button>
+                <Button4>Learn More &rarr;</Button4>
               </div>
               {/* 두 번째 카드 */}
               <div className="bg-[#ffffff] p-8 rounded-xl flex-1 text-left">
@@ -64,9 +61,7 @@ export default function PricingPage() {
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Integer mollis justo non enim lacinia.
                 </p>
-                <button className="bg-white py-2 px-5 rounded-md">
-                  Learn More &rarr;
-                </button>
+                <Button4>Learn More &rarr;</Button4>
               </div>
               {/* 세 번째 카드 */}
               <div className="bg-[#ffffff] p-8 rounded-xl flex-1 text-left">
@@ -78,9 +73,7 @@ export default function PricingPage() {
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Integer mollis justo non enim lacinia.
                 </p>
-                <button className="bg-white py-2 px-5 rounded-md  ">
-                  Learn More &rarr;
-                </button>
+                <Button4>Learn More &rarr;</Button4>
               </div>
             </div>
           </div>

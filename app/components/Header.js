@@ -1,6 +1,6 @@
-"use client";
-import { useState } from "react";
-import { usePathname } from "next/navigation"
+'use client';
+import { useState } from 'react';
+import { usePathname } from 'next/navigation';
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,8 +8,8 @@ export default function Header() {
 
   const linkStyle = (path) =>
     pathname === path
-      ? "text-purple-500" 
-      : "text-gray-700 hover:text-purple-500"; // 아니면 기본 회색 + hover시 보라색
+      ? 'text-purple-500'
+      : 'text-gray-700 hover:text-purple-500'; // 아니면 기본 회색 + hover시 보라색
 
   return (
     <header className="bg-white shadow-sm">
@@ -19,9 +19,15 @@ export default function Header() {
 
         {/* 네비게이션 */}
         <nav className="hidden md:flex space-x-8 text-sm font-medium">
-          <a href="/" className={linkStyle("/")}>Home</a>
-          <a href="/about" className={linkStyle("/about")}>About</a>
-          <a href="/pricing" className={linkStyle("/pricing")}>Pricing</a>
+          <a href="/" className={linkStyle('/')}>
+            Home
+          </a>
+          <a href="/about" className={linkStyle('/about')}>
+            About
+          </a>
+          <a href="/pricing" className={linkStyle('/pricing')}>
+            Pricing
+          </a>
 
           {/* Features 드롭다운 */}
           <div className="relative group">
