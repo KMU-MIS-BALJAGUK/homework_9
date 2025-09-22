@@ -19,3 +19,18 @@ export function Button2({ children, onClick }) {
     </button>
   );
 }
+
+export function Button3({ children, onClick }) {
+  return (
+    <button
+      onClick={onClick}
+      className="py-2 px-5 rounded-md border border-gray-600 transition-colors duration-200 text-gray-900"
+    >
+      {children}
+    </button>
+  );
+}
+
+export function Button4({ children }) {
+  return <button className="bg-white py-2 px-5 rounded-md ">{children}</button>;
+}
