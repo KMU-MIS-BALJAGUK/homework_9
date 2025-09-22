@@ -1,3 +1,6 @@
+feat/about
+export function Button({ children, onClick }) {
+=======
 export default function Button({ children, type = 'primary' }) {
   const base = 'px-6 py-2 rounded font-medium transition';
   const styles =
@@ -9,6 +12,7 @@ export default function Button({ children, type = 'primary' }) {
 }
 
 export function Button2({ children, onClick }) {
+main
   return (
     <button
       onClick={onClick}
@@ -18,6 +22,9 @@ export function Button2({ children, onClick }) {
       {children}
     </button>
   );
+feat/about
+}
+
 }
 
 export function Button3({ children, onClick }) {
@@ -34,3 +41,4 @@ export function Button3({ children, onClick }) {
 export function Button4({ children }) {
   return <button className="bg-white py-2 px-5 rounded-md ">{children}</button>;
 }
+main
