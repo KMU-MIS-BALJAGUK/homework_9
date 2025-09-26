@@ -1,7 +1,7 @@
 'use client';
 
 import Header from '../components/Header';
-import { LearnMoreButton } from '../components/Button';
+import { LearnMore } from '../components/Button';
 
 export default function about() {
   return (
@@ -37,11 +37,11 @@ export default function about() {
                 Comprehensive Solutions Tailored to Your Needs
               </h3>
               <p className="mt-2 text-gray-600 flex-grow">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                varius elementum ligula. Duis cursus, mi quis viverra commodo diam
-                lorem vitae erat.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Suspendisse varius elementum ligula. Duis cursus, mi quis
+                viverra commodo diam lorem vitae erat.
               </p>
-              <LearnMoreButton />
+              <LearnMore />
             </div>
           </div>
 
@@ -56,10 +56,10 @@ export default function about() {
                 Innovative Strategies for Unmatched Results
               </h3>
               <p className="mt-2 text-gray-600 flex-grow">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                varius sit amet.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Suspendisse varius sit amet.
               </p>
-              <LearnMoreButton />
+              <LearnMore />
             </div>
             {/* 오른쪽: 보라색 배경 */}
             <div className="bg-[#f3ecff]"></div>
@@ -68,19 +68,19 @@ export default function about() {
           {/* Redefining Standards 카드 */}
           <div className="rounded-lg overflow-hidden flex flex-col border border-[#c1a0fd] md:row-span-2">
             <div className="bg-[#f3ecff] h-[402px]"></div>
-            <div className="bg-white h-[192px] p-6 flex flex-col"> 
+            <div className="bg-white h-[192px] p-6 flex flex-col">
               <p className="text-sm font-semibold text-[#cdb3fd] uppercase">
-              Subtitle
-            </p>
-            <h3 className="mt-2 text-xl font-bold text-gray-900">
-              Redefining Standards with Exceptional Features
-            </h3>
-            <p className="mt-2 text-gray-600 flex-grow">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-              varius sit amet. Duis cursus, mi quis viverra commodo diam lorem
-              vitae erat.
-            </p>
-            <LearnMoreButton />
+                Subtitle
+              </p>
+              <h3 className="mt-2 text-xl font-bold text-gray-900">
+                Redefining Standards with Exceptional Features
+              </h3>
+              <p className="mt-2 text-gray-600 flex-grow">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Suspendisse varius sit amet. Duis cursus, mi quis viverra
+                commodo diam lorem vitae erat.
+              </p>
+              <LearnMore />
             </div>
           </div>
 
@@ -92,10 +92,10 @@ export default function about() {
                 Tailored Solutions
               </h3>
               <p className="mt-2 text-gray-600 flex-grow">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                varius sit amet.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Suspendisse varius sit amet.
               </p>
-              <LearnMoreButton />
+              <LearnMore />
             </div>
             <div className="bg-white p-6 rounded-lg border border-[#c1a0fd] flex flex-col">
               <div className="w-16 h-16 bg-[#f3ecff] rounded-lg mb-4"></div>
@@ -103,10 +103,10 @@ export default function about() {
                 Smarter Workflows
               </h3>
               <p className="mt-2 text-gray-600 flex-grow">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                varius sit amet.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Suspendisse varius sit amet.
               </p>
-              <LearnMoreButton />
+              <LearnMore />
             </div>
           </div>
         </section>

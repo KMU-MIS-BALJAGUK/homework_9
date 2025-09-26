@@ -1,7 +1,9 @@
 'use client';
 import Header from '../components/Header';
 import React, { useState } from 'react';
-import Button, { LearnMoreButton } from '../components/Button.js';
+import Button, { LearnMore } from '../components/Button.js';
+import { GetStarted } from '../components/Button.js';
+import { LearnMoreButton } from '../components/Button.js';
 export default function PricingPage() {
   const [activeButton, setActiveButton] = useState(null);
 
@@ -14,7 +16,8 @@ export default function PricingPage() {
     <main>
       <Header />
       <section className="bg-[#ffffff] py-8 text-center">
-        <div className="container mx-auto rounded-lg  pt-10 pb-10  bg-[#f7f3f9] ">
+        <div className="container mx-auto rounded-lg  pt-10 pb-10  bg-[#F5F5F5] ">
+          <p className="text-xs font-semibold text-[#D3BDFC] mb-2 ">SUBTITLE</p>
           <div className="container mx-auto px-5 max-w-7xl gap-4 mb-24">
             <h1 className="text-4xl font-bold mb-4">
               Designed to Deliver Real Value <br />
@@ -25,10 +28,14 @@ export default function PricingPage() {
               mollis justo non enim lacinia.
             </p>
             <div className="flex justify-center gap-4">
-              <Button onClick={() => handleButtonClick('Get started')}>
+              <GetStarted onClick={() => handleButtonClick('Get started')}>
                 Get started &rarr;
-              </Button>
-              <LearnMoreButton />
+              </GetStarted>
+              <LearnMoreButton
+                onClick={() => handleButtonClick('Learn More 2')}
+              >
+                Learn More
+              </LearnMoreButton>
             </div>
           </div>
           {/* 카드 섹션 */}
@@ -45,7 +52,7 @@ export default function PricingPage() {
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Integer mollis justo non enim lacinia.
                 </p>
-                <LearnMoreButton />
+                <LearnMore />
               </div>
               {/* 두 번째 카드 */}
               <div className="bg-[#ffffff] p-8 rounded-xl flex-1 text-left flex flex-col">
@@ -57,7 +64,7 @@ export default function PricingPage() {
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Integer mollis justo non enim lacinia.
                 </p>
-                <LearnMoreButton />
+                <LearnMore />
               </div>
               {/* 세 번째 카드 */}
               <div className="bg-[#ffffff] p-8 rounded-xl flex-1 text-left flex flex-col">
@@ -69,14 +76,46 @@ export default function PricingPage() {
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Integer mollis justo non enim lacinia.
                 </p>
-                <LearnMoreButton />
+                <LearnMore />
               </div>
             </div>
           </div>
         </div>
       </section>
-
-      {/* 후기 섹션 */}
+      {/* {하위섹션} */}
+      <section className="bg-[#ffffff] py-8 ">
+        <div className="container mx-auto rounded-lg  pt-10 pb-10  bg-[#F5F5F5] ">
+          <p className="text-xs font-semibold text-[#D3BDFC] mb-2 text-left">
+            TESTIMONIALS
+          </p>
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">
+            Success Stories That <br /> Inspire Confidence <br /> in What We Do
+          </h2>
+          <p className="text-gray-600 mb-10 max-w-lg">
+            Lorem ipsum dolor sit amet, consectetur adipiscing
+            <br /> elit. Suspendisse varius elementum tristique.
+          </p>
+          <div className="flex items-center justify-between mt-10">
+            {/* 1. 화살표 버튼 영역 */}
+            <div className="flex space-x-4">
+              {/* 왼쪽 화살표 */}
+              <button
+                onClick={handlePrev}
+                className="p-3 rounded-full bg-purple-200 text-purple-700"
+              >
+                &larr;
+              </button>
+              {/* 오른쪽 화살표 */}
+              <button
+                onClick={handleNext}
+                className="p-3 rounded-full bg-purple-200 text-purple-700"
+              >
+                &rarr;
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
