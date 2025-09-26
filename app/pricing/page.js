@@ -1,7 +1,7 @@
 'use client';
 import Header from '../components/Header';
 import React, { useState } from 'react';
-import { Button } from '../components/Button.js';
+import Button, { LearnMoreButton } from '../components/Button.js';
 export default function PricingPage() {
   const [activeButton, setActiveButton] = useState(null);
 
@@ -28,12 +28,7 @@ export default function PricingPage() {
               <Button onClick={() => handleButtonClick('Get started')}>
                 Get started &rarr;
               </Button>
-              <button
-                onClick={() => handleButtonClick('Learn More 2')}
-                className="py-2 px-5 rounded-md border border-gray-600 transition-colors duration-200 text-gray-900"
-              >
-                Learn More
-              </button>
+              <LearnMoreButton />
             </div>
           </div>
           {/* 카드 섹션 */}
@@ -41,46 +36,40 @@ export default function PricingPage() {
           <div className="container mx-auto px-5 max-w-7xl">
             <div className="flex flex-col md:flex-row justify-start gap-5">
               {/* 첫 번째 카드 */}
-              <div className="bg-[#ffffff] p-8 rounded-xl flex-1 text-left">
+              <div className="bg-[#ffffff] p-8 rounded-xl flex-1 text-left flex flex-col">
                 <div className="w-16 h-16 bg-[#dcb5ef] rounded-lg mb-4"></div>
                 <h3 className="text-xl font-semibold mb-2">
                   Tailored Solutions
                 </h3>
-                <p className="text-sm text-gray-600 mb-4">
+                <p className="text-sm text-gray-600 mb-4 flex-grow">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Integer mollis justo non enim lacinia.
                 </p>
-                <button className="bg-white py-2 px-5 rounded-md ">
-                  Learn More &rarr;
-                </button>
+                <LearnMoreButton />
               </div>
               {/* 두 번째 카드 */}
-              <div className="bg-[#ffffff] p-8 rounded-xl flex-1 text-left">
+              <div className="bg-[#ffffff] p-8 rounded-xl flex-1 text-left flex flex-col">
                 <div className="w-16 h-16 bg-[#dcb5ef] rounded-lg mb-4"></div>
                 <h3 className="text-xl font-semibold mb-2">
                   Smarter Workflows
                 </h3>
-                <p className="text-sm text-gray-600 mb-4">
+                <p className="text-sm text-gray-600 mb-4 flex-grow">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Integer mollis justo non enim lacinia.
                 </p>
-                <button className="bg-white py-2 px-5 rounded-md">
-                  Learn More &rarr;
-                </button>
+                <LearnMoreButton />
               </div>
               {/* 세 번째 카드 */}
-              <div className="bg-[#ffffff] p-8 rounded-xl flex-1 text-left">
+              <div className="bg-[#ffffff] p-8 rounded-xl flex-1 text-left flex flex-col">
                 <div className="w-16 h-16 bg-[#dcb5ef] rounded-lg  mb-4"></div>
                 <h3 className="text-xl font-semibold mb-2">
                   Scalable Strategies
                 </h3>
-                <p className="text-sm text-gray-600 mb-4">
+                <p className="text-sm text-gray-600 mb-4 flex-grow">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Integer mollis justo non enim lacinia.
                 </p>
-                <button className="bg-white py-2 px-5 rounded-md  ">
-                  Learn More &rarr;
-                </button>
+                <LearnMoreButton />
               </div>
             </div>
           </div>

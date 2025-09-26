@@ -1,6 +1,3 @@
-feat/about
-export function Button({ children, onClick }) {
-=======
 export default function Button({ children, type = 'primary' }) {
   const base = 'px-6 py-2 rounded font-medium transition';
   const styles =
@@ -11,34 +8,13 @@ export default function Button({ children, type = 'primary' }) {
   return <button className={`${base} ${styles}`}>{children}</button>;
 }
 
-export function Button2({ children, onClick }) {
-main
+export function LearnMoreButton({ href = '#' }) {
   return (
-    <button
-      onClick={onClick}
-      className="py-2 px-5 rounded-md transition-colors duration-200 
-  bg-[#C1A0FD] text-gray-900"
+    <a
+      href={href}
+      className="mt-4 inline-block max-w-max px-4 py-2 rounded-md text-black font-medium transition-colors bg-white hover:bg-gray-200"
     >
-      {children}
-    </button>
-  );
-feat/about
-}
-
-}
-
-export function Button3({ children, onClick }) {
-  return (
-    <button
-      onClick={onClick}
-      className="py-2 px-5 rounded-md border border-gray-600 transition-colors duration-200 text-gray-900"
-    >
-      {children}
-    </button>
+      Learn More →
+    </a>
   );
 }
-
-export function Button4({ children }) {
-  return <button className="bg-white py-2 px-5 rounded-md ">{children}</button>;
-}
-main
