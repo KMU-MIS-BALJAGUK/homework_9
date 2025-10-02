@@ -1,9 +1,11 @@
 'use client';
 import Header from '../components/Header';
 import React, { useState } from 'react';
-import Button, { LearnMore } from '../components/Button.js';
-import { GetStarted } from '../components/Button.js';
-import { LearnMoreButton } from '../components/Button.js';
+import {
+  LearnMore,
+  GetStarted,
+  LearnMoreButton,
+} from '../components/Button.js';
 export default function PricingPage() {
   const [activeButton, setActiveButton] = useState(null);
 
@@ -46,11 +48,12 @@ export default function PricingPage() {
               mollis justo non enim lacinia.
             </p>
             <div className="flex justify-center gap-4">
-              <GetStarted onClick={() => handleButtonClick('Get started')}>
+              <GetStarted onClick={handleButtonClick} buttonValue="Get started">
                 Get started &rarr;
               </GetStarted>
               <LearnMoreButton
-                onClick={() => handleButtonClick('Learn More 2')}
+                onClick={handleButtonClick}
+                buttonValue="Learn More"
               >
                 Learn More
               </LearnMoreButton>
