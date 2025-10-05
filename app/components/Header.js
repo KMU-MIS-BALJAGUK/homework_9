@@ -20,7 +20,7 @@ export default function Header() {
 
         {/* 네비게이션 */}
         <nav className="hidden md:flex space-x-8 text-sm font-medium">
-          <Link href="/" className={linkStyle("/")}>
+          <Link href="/home" className={linkStyle("/home")}>
             Home
           </Link>
           <Link href="/about" className={linkStyle("/about")}>
