@@ -7,7 +7,7 @@ export default function about() {
   return (
     <main>
       <Header />
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
         {/* Hero 섹션 */}
         <section className="text-center mt-10 mb-16">
           <p className="text-sm font-semibold text-[#cdb3fd] uppercase tracking-wide">
@@ -28,7 +28,7 @@ export default function about() {
         <section className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* Comprehensive Solutions 카드 */}
           <div className="rounded-lg overflow-hidden flex flex-col border border-[#c1a0fd] md:row-span-2">
-            <div className="bg-[#f3ecff] h-[402px]"></div>
+            <div className="bg-[#f3ecff] h-[342px]"></div>
             <div className="bg-white p-6 flex flex-col">
               <p className="text-sm font-semibold text-[#cdb3fd] uppercase">
                 Subtitle
@@ -36,10 +36,11 @@ export default function about() {
               <h3 className="mt-2 text-xl font-bold text-gray-900">
                 Comprehensive Solutions Tailored to Your Needs
               </h3>
-              <p className="mt-2 text-gray-600 flex-grow">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                varius elementum ligula. Duis cursus, mi quis viverra commodo diam
-                lorem vitae erat.
+              <p className="mt-10 text-gray-600 flex-grow">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Suspendisse varius elementum tristique. 
+                Duis cursus, mi quis viverra ut commodo diam libero vitae erat. 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               </p>
               <LearnMoreButton />
             </div>
@@ -67,8 +68,8 @@ export default function about() {
 
           {/* Redefining Standards 카드 */}
           <div className="rounded-lg overflow-hidden flex flex-col border border-[#c1a0fd] md:row-span-2">
-            <div className="bg-[#f3ecff] h-[402px]"></div>
-            <div className="bg-white h-[192px] p-6 flex flex-col"> 
+            <div className="bg-[#f3ecff] h-[342px]"></div>
+            <div className="bg-white p-6 flex flex-col"> 
               <p className="text-sm font-semibold text-[#cdb3fd] uppercase">
               Subtitle
             </p>
@@ -76,9 +77,10 @@ export default function about() {
               Redefining Standards with Exceptional Features
             </h3>
             <p className="mt-2 text-gray-600 flex-grow">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-              varius sit amet. Duis cursus, mi quis viverra commodo diam lorem
-              vitae erat.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse varius elementum tristique.
+              Duis cursus, mi quis viverra ut commodo diam libero vitae erat.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
             <LearnMoreButton />
             </div>
@@ -92,8 +94,7 @@ export default function about() {
                 Tailored Solutions
               </h3>
               <p className="mt-2 text-gray-600 flex-grow">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                varius sit amet.
+                Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Suspendis varius elementum tristique.
               </p>
               <LearnMoreButton />
             </div>
@@ -103,7 +104,7 @@ export default function about() {
                 Smarter Workflows
               </h3>
               <p className="mt-2 text-gray-600 flex-grow">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Suspendis varius elementum tristique.
                 varius sit amet.
               </p>
               <LearnMoreButton />
